@@ -10,9 +10,9 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class ShoppingCartDTO {
 
-    private Long id;
-    private Long customerId;
-    private LocalDateTime createdDate;
-    private LocalDateTime expiryDate;
-    private String status;
+    private Long shoppingCartIdDTO;
+    private Long customerIdDTO;
+    private LocalDateTime createdDateDTO;
+    private LocalDateTime expiryDateDTO;
+    private String statusDTO;
 }

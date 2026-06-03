@@ -15,7 +15,7 @@ public class ShoppingCart {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long shoppingCartId;
 
     @Column(nullable = false)
     private Long customerId;

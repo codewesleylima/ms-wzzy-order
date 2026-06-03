@@ -10,10 +10,10 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 public class OrderItemDTO {
 
-    private Long id;
-    private Long orderId;
-    private Long bookId;
-    private Integer quantity;
-    private BigDecimal pricePerUnit;
-    private BigDecimal subtotal;
+    private Long orderItemIdDTO;
+    private Long orderIdDTO;
+    private Long bookIdDTO;
+    private Integer quantityDTO;
+    private BigDecimal pricePerUnitDTO;
+    private BigDecimal subtotalDTO;
 }

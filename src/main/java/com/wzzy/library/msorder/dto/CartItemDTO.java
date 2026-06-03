@@ -10,9 +10,9 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class CartItemDTO {
 
-    private Long id;
-    private Long cartId;
-    private Long bookId;
-    private Integer quantity;
-    private LocalDateTime addedDate;
+    private Long cartItemIdDTO;
+    private Long cartIdDTO;
+    private Long bookIdDTO;
+    private Integer quantityDTO;
+    private LocalDateTime addedDateDTO;
 }
