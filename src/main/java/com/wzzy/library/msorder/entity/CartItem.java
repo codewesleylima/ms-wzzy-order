@@ -15,21 +15,21 @@ public class CartItem {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long cartItemId;
+    private Long cartItemIdEntity;
 
     @ManyToOne
     @JoinColumn(name = "cart_id", nullable = false)
-    private ShoppingCart cart;
+    private ShoppingCart cartEntity;
 
     @Column(nullable = false)
-    private Long bookId;
+    private Long bookIdEntity;
 
     @Column(nullable = false)
-    private Integer quantity;
+    private Integer quantityEntity;
 
     @Column(nullable = false)
-    private LocalDateTime addedDate = LocalDateTime.now();
+    private LocalDateTime addedDateEntity = LocalDateTime.now();
 
     @Column(nullable = false, updatable = false)
-    private LocalDateTime createdAt = LocalDateTime.now();
+    private LocalDateTime createdAtEntity = LocalDateTime.now();
 }

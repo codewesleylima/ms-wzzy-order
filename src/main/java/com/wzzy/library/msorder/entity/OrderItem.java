@@ -16,24 +16,24 @@ public class OrderItem {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long orderItemId;
+    private Long orderItemIdEntity;
 
     @ManyToOne
     @JoinColumn(name = "order_id", nullable = false)
-    private Order order;
+    private Order orderEntity;
 
     @Column(nullable = false)
-    private Long bookId;
+    private Long bookIdEntity;
 
     @Column(nullable = false)
-    private Integer quantity;
+    private Integer quantityEntity;
 
     @Column(nullable = false)
-    private BigDecimal pricePerUnit;
+    private BigDecimal pricePerUnitEntity;
 
     @Column(nullable = false)
-    private BigDecimal subtotal;
+    private BigDecimal subtotalEntity;
 
     @Column(nullable = false, updatable = false)
-    private LocalDateTime createdAt = LocalDateTime.now();
+    private LocalDateTime createdAtEntity = LocalDateTime.now();
 }

@@ -17,30 +17,30 @@ public class Order {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long orderId;
+    private Long orderIdEntity;
 
     @Column(nullable = false)
-    private Long customerId;
+    private Long customerIdEntity;
 
     @Column(nullable = false)
-    private LocalDateTime orderDate = LocalDateTime.now();
+    private LocalDateTime orderDateEntity = LocalDateTime.now();
 
     @Column(nullable = false)
-    private BigDecimal totalPrice;
+    private BigDecimal totalPriceEntity;
 
     @Column(nullable = false)
-    private String status = "PENDING";
+    private String statusEntity = "PENDING";
 
-    private String shippingAddress;
+    private String shippingAddressEntity;
 
-    private LocalDateTime estimatedDelivery;
+    private LocalDateTime estimatedDeliveryEntity;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "order")
-    private List<OrderItem> orderItems;
+    private List<OrderItem> orderItemsEntity;
 
     @Column(nullable = false, updatable = false)
-    private LocalDateTime createdAt = LocalDateTime.now();
+    private LocalDateTime createdAtEntity = LocalDateTime.now();
 
     @Column(nullable = false)
-    private LocalDateTime updatedAt = LocalDateTime.now();
+    private LocalDateTime updatedAtEntity = LocalDateTime.now();
 }

@@ -15,22 +15,22 @@ public class ShoppingCart {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long shoppingCartId;
+    private Long shoppingCartIdEntity;
 
     @Column(nullable = false)
-    private Long customerId;
+    private Long customerIdEntity;
 
     @Column(nullable = false)
-    private LocalDateTime createdDate = LocalDateTime.now();
+    private LocalDateTime createdDateEntity = LocalDateTime.now();
 
-    private LocalDateTime expiryDate;
+    private LocalDateTime expiryDateEntity;
 
     @Column(nullable = false)
-    private String status = "ACTIVE";
+    private String statusEntity = "ACTIVE";
 
     @Column(nullable = false, updatable = false)
-    private LocalDateTime createdAt = LocalDateTime.now();
+    private LocalDateTime createdAtEntity = LocalDateTime.now();
 
     @Column(nullable = false)
-    private LocalDateTime updatedAt = LocalDateTime.now();
+    private LocalDateTime updatedAtEntity = LocalDateTime.now();
 }
