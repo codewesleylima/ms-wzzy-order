@@ -18,4 +18,7 @@ public class OrderDTO {
     private String statusDTO;
     private String shippingAddressDTO;
     private LocalDateTime estimatedDeliveryDTO;
+    private java.util.List<OrderItemDTO> orderItemsDTO;
+    private LocalDateTime createdAtDTO;
+    private LocalDateTime updatedAtDTO;
 }
